@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jminix</groupId>
@@ -34,7 +35,6 @@
 			<timezone>+1</timezone>
 		</developer>
 	</developers>
-<!-- 
 	<repositories>
 		<repository>
 			<id>maven-restlet</id>
@@ -43,7 +43,6 @@
 			<url>http://maven.restlet.org</url>
 		</repository>
 	</repositories>
- -->
 	<dependencies>
 		<dependency>
 			<groupId>org.restlet.jee</groupId>
@@ -90,9 +89,9 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-    		<groupId>org.jgroups</groupId>
-    		<artifactId>jgroups</artifactId>
-    		<version>2.12.1.3.Final</version>
+			<groupId>org.jgroups</groupId>
+			<artifactId>jgroups</artifactId>
+			<version>2.12.1.3.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jasypt</groupId>
@@ -133,18 +132,18 @@
 					</archive>
 				</configuration>
 			</plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<dependencies>
@@ -171,7 +170,6 @@
 		<restlet.version>2.1.4</restlet.version>
 		<jdk>1.5</jdk>
 	</properties>
-	
 	<distributionManagement>
 		<site>
 			<id>projects.doc</id>
